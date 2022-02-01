@@ -4,7 +4,7 @@
 
 import Foundation
 
-public struct Chat: Codable {
+public struct Chat: Codable, Hashable {
 
     var uuid: UUID
 
@@ -12,7 +12,12 @@ public struct Chat: Codable {
 
     private var messages: Set<Message> = Set()
 
-    public init(uuid: UUID, withUser: User) {
+    public init(_ withUser: User) {
+        self.uuid = generateNewUUID()
+        self.withUser = withUser
+    }
+    
+    public init(_ uuid: UUID, _ withUser: User) {
         self.uuid = uuid
         self.withUser = withUser
     }
@@ -23,9 +28,11 @@ public struct Chat: Codable {
 
     public mutating func addMessage(_ message: String, _ local: Bool) {
         if local {
-            messages.insert(Message(message: message))
+            messages.insert(Message(message))
         } else {
-            messages.insert(Message(user: withUser, message: message))
+            messages.insert(Message(withUser, message))
         }
     }
+    
+    
 }

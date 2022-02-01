@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FAC2E0F27A9914700367AA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAC2E0E27A9914700367AA0 /* ContentView.swift */; };
 		F9D5D370BB13C0C1853AE3B5 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5D4B02B51606F89A225C0 /* Chat.swift */; };
 		F9D5D42CECD60D475269D6AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9D5D2AC705F67BCEEEE9E71 /* Assets.xcassets */; };
 		F9D5D430CBEEACA48587BBD9 /* selfChat_569194UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5D46B6EEE4607B927ED22 /* selfChat_569194UITests.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FAC2E0E27A9914700367AA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F9D5D1ABC5FBEDDF1EAC9085 /* selfChat_569194App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selfChat_569194App.swift; sourceTree = "<group>"; };
 		F9D5D2AC705F67BCEEEE9E71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9D5D2D113B63B7F97DE586F /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
@@ -81,14 +83,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F9D5D1C970BD4A59AFE4CF07 /* Start */ = {
-			isa = PBXGroup;
-			children = (
-				F9D5D608DB439A363189CFC1 /* StartView.swift */,
-			);
-			path = Start;
-			sourceTree = "<group>";
-		};
 		F9D5D29006521C780D4C15B8 /* ChatStructs */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,11 +123,12 @@
 			isa = PBXGroup;
 			children = (
 				F9D5D2AC705F67BCEEEE9E71 /* Assets.xcassets */,
+				F9D5D29006521C780D4C15B8 /* ChatStructs */,
 				F9D5DABC83C0FB2481DDE864 /* Preview Content */,
 				F9D5D1ABC5FBEDDF1EAC9085 /* selfChat_569194App.swift */,
-				F9D5D29006521C780D4C15B8 /* ChatStructs */,
 				F9D5D2D113B63B7F97DE586F /* Functions.swift */,
-				F9D5D1C970BD4A59AFE4CF07 /* Start */,
+				F9D5D608DB439A363189CFC1 /* StartView.swift */,
+				0FAC2E0E27A9914700367AA0 /* ContentView.swift */,
 			);
 			path = selfChat_569194;
 			sourceTree = "<group>";
@@ -227,11 +222,14 @@
 /* Begin PBXProject section */
 		F9D5D484AA41D07CF6EF3E03 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = F9D5D04D7507D8171E207DE9 /* Build configuration list for PBXProject "selfChat_569194" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = F9D5DD505CD3E4F5EBF1A373;
@@ -287,6 +285,7 @@
 			files = (
 				F9D5DAF6A9D4B29E83AE3F49 /* selfChat_569194App.swift in Sources */,
 				F9D5DEE867505EE3C0552FE7 /* User.swift in Sources */,
+				0FAC2E0F27A9914700367AA0 /* ContentView.swift in Sources */,
 				F9D5D370BB13C0C1853AE3B5 /* Chat.swift in Sources */,
 				F9D5DA4FCE72CB782C113D89 /* Functions.swift in Sources */,
 				F9D5D559DFFE305C36892EEF /* ColorErrors.swift in Sources */,
@@ -476,8 +475,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -565,6 +563,7 @@
 				F9D5DD89EF84A293F4CFC815 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9D5D8BF3E99C7488FFBCB6F /* Build configuration list for PBXNativeTarget "selfChat_569194Tests" */ = {
 			isa = XCConfigurationList;
@@ -573,6 +572,7 @@
 				F9D5D2C9F420BD88C01F8432 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9D5DFCB2519B702298013AE /* Build configuration list for PBXNativeTarget "selfChat_569194UITests" */ = {
 			isa = XCConfigurationList;
@@ -581,6 +581,7 @@
 				F9D5D10DCC7E4A2A28103845 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

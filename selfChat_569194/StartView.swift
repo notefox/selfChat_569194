@@ -2,15 +2,18 @@
 //  StartView.swift
 //  selfChat_569194
 //
-//  Created by on 01.02.22.
+//  Created by Note on 01.02.22.
 //
 //
 
 import SwiftUI
 
 struct StartView: View {
+    
+    @State var chats: Set<Chat> = Set()
+    
     var body: some View {
-        Text("Conversations")
+        Text("e")
     }
 }
 

@@ -36,11 +36,22 @@ public struct User: Codable, Hashable, Comparable {
 
         rgbHexValue = newColor
     }
-
+    
     public var description: String {
         "User(uuid: \(uuid), name: \(name), rgbHexValue: \(rgbHexValue))"
     }
 
+    public var initials: String {
+        var buildString = ""
+        for splitted in name.split(separator: " ") {
+            let first = splitted.first
+            if first != nil {
+                buildString.append(first.unsafelyUnwrapped.uppercased())
+            }
+        }
+        return buildString
+    }
+    
     public func hash(into hasher: inout Hasher) {
         hasher.combine(uuid)
         hasher.combine(name)
