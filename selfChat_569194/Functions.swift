@@ -7,7 +7,7 @@ import SwiftUI
 
 private let maxColorValue: UInt32 = 16777215
 
-func getColorByHex(rgbHexValue:UInt32, alpha:Double = 1.0) -> UIColor {
+func getColorByHex(_ rgbHexValue:UInt32, _ alpha:Double = 1.0) -> UIColor {
     let red = Double((rgbHexValue & 0xFF0000) >> 16) / 256.0
     let green = Double((rgbHexValue & 0xFF00) >> 8) / 256.0
     let blue = Double((rgbHexValue & 0xFF)) / 256.0

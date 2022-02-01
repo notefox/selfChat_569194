@@ -14,14 +14,14 @@ struct Message: Codable, Hashable, Comparable {
 
     let timestamp: UInt64
 
-    public init(user: User, message: String) {
+    public init(_ user: User, _ message: String) {
         uuid = generateNewUUID()
         self.user = user
         self.message = message
         timestamp = currentTimeMillis()
     }
 
-    public init(message: String) {
+    public init(_ message: String) {
         uuid = generateNewUUID()
         user = nil;
         self.message = message
