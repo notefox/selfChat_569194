@@ -12,7 +12,7 @@ import SwiftUI
 struct selfChat_569194App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StartView()
         }
     }
 }
