@@ -9,7 +9,7 @@ public struct User: Codable, Hashable, Comparable {
 
     var uuid: UUID
     var name: String
-    var rgbHexValue:UInt32
+    var rgbHexValue: UInt32
 
     public init(uuid: UUID, name: String, rgbHexValue: UInt32) {
         self.uuid = uuid
