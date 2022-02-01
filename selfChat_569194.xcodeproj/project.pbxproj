@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F9D5D370BB13C0C1853AE3B5 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5D4B02B51606F89A225C0 /* Chat.swift */; };
 		F9D5D42CECD60D475269D6AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9D5D2AC705F67BCEEEE9E71 /* Assets.xcassets */; };
 		F9D5D430CBEEACA48587BBD9 /* selfChat_569194UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5D46B6EEE4607B927ED22 /* selfChat_569194UITests.swift */; };
+		F9D5D559DFFE305C36892EEF /* ColorErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5D7067BB1F4754459A199 /* ColorErrors.swift */; };
 		F9D5D6C0A39EA547632E382B /* selfChat_569194UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5DFA9614C0C1B22EE806B /* selfChat_569194UITestsLaunchTests.swift */; };
-		F9D5D95DE87490008D51DA94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5D54A2355FD98C8560B72 /* ContentView.swift */; };
+		F9D5DA4FCE72CB782C113D89 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5D2D113B63B7F97DE586F /* Functions.swift */; };
 		F9D5DA9416DB6A49F6D91668 /* selfChat_569194Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5D6AD33DE569866EB34A9 /* selfChat_569194Tests.swift */; };
 		F9D5DAF6A9D4B29E83AE3F49 /* selfChat_569194App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5D1ABC5FBEDDF1EAC9085 /* selfChat_569194App.swift */; };
+		F9D5DC2439AA64E462D8E420 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5D608DB439A363189CFC1 /* StartView.swift */; };
+		F9D5DD1A170019268D44F51B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5D3ED612F4723FC8A9EF7 /* Message.swift */; };
+		F9D5DEE867505EE3C0552FE7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5DCF6D37C356D77A15C08 /* User.swift */; };
 		F9D5DF99FFDC33EE97ABD882 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9D5D93D4EC6D10E751DB042 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -36,11 +41,16 @@
 /* Begin PBXFileReference section */
 		F9D5D1ABC5FBEDDF1EAC9085 /* selfChat_569194App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selfChat_569194App.swift; sourceTree = "<group>"; };
 		F9D5D2AC705F67BCEEEE9E71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9D5D2D113B63B7F97DE586F /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		F9D5D3D26A59C0B7CE910CCF /* selfChat_569194UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = selfChat_569194UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9D5D3ED612F4723FC8A9EF7 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		F9D5D46B6EEE4607B927ED22 /* selfChat_569194UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selfChat_569194UITests.swift; sourceTree = "<group>"; };
-		F9D5D54A2355FD98C8560B72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F9D5D4B02B51606F89A225C0 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		F9D5D608DB439A363189CFC1 /* StartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		F9D5D6AD33DE569866EB34A9 /* selfChat_569194Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selfChat_569194Tests.swift; sourceTree = "<group>"; };
+		F9D5D7067BB1F4754459A199 /* ColorErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorErrors.swift; sourceTree = "<group>"; };
 		F9D5D93D4EC6D10E751DB042 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F9D5DCF6D37C356D77A15C08 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F9D5DD6674E829EAD98D87E4 /* selfChat_569194Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = selfChat_569194Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D5DD94616384A7A77D4C87 /* selfChat_569194.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = selfChat_569194.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D5DFA9614C0C1B22EE806B /* selfChat_569194UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selfChat_569194UITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -71,6 +81,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F9D5D1C970BD4A59AFE4CF07 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				F9D5D608DB439A363189CFC1 /* StartView.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		F9D5D29006521C780D4C15B8 /* ChatStructs */ = {
+			isa = PBXGroup;
+			children = (
+				F9D5DCF6D37C356D77A15C08 /* User.swift */,
+				F9D5D4B02B51606F89A225C0 /* Chat.swift */,
+				F9D5D4776EA3EEB6227AC0FB /* Errors */,
+				F9D5D3ED612F4723FC8A9EF7 /* Message.swift */,
+			);
+			path = ChatStructs;
+			sourceTree = "<group>";
+		};
+		F9D5D4776EA3EEB6227AC0FB /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				F9D5D7067BB1F4754459A199 /* ColorErrors.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
 		F9D5D5D4EE782297DB7DC3A9 /* selfChat_569194Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,7 +131,9 @@
 				F9D5D2AC705F67BCEEEE9E71 /* Assets.xcassets */,
 				F9D5DABC83C0FB2481DDE864 /* Preview Content */,
 				F9D5D1ABC5FBEDDF1EAC9085 /* selfChat_569194App.swift */,
-				F9D5D54A2355FD98C8560B72 /* ContentView.swift */,
+				F9D5D29006521C780D4C15B8 /* ChatStructs */,
+				F9D5D2D113B63B7F97DE586F /* Functions.swift */,
+				F9D5D1C970BD4A59AFE4CF07 /* Start */,
 			);
 			path = selfChat_569194;
 			sourceTree = "<group>";
@@ -247,7 +286,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9D5DAF6A9D4B29E83AE3F49 /* selfChat_569194App.swift in Sources */,
-				F9D5D95DE87490008D51DA94 /* ContentView.swift in Sources */,
+				F9D5DEE867505EE3C0552FE7 /* User.swift in Sources */,
+				F9D5D370BB13C0C1853AE3B5 /* Chat.swift in Sources */,
+				F9D5DA4FCE72CB782C113D89 /* Functions.swift in Sources */,
+				F9D5D559DFFE305C36892EEF /* ColorErrors.swift in Sources */,
+				F9D5DC2439AA64E462D8E420 /* StartView.swift in Sources */,
+				F9D5DD1A170019268D44F51B /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
