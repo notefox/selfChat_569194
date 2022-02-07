@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0FAC2E0F27A9914700367AA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAC2E0E27A9914700367AA0 /* ContentView.swift */; };
+		0FFB06E427B16FD100ECC7A9 /* Conversations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB06E327B16FD100ECC7A9 /* Conversations.swift */; };
+		0FFB06E627B1749300ECC7A9 /* ChatIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB06E527B1749300ECC7A9 /* ChatIcon.swift */; };
+		0FFB06E827B1934900ECC7A9 /* TitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB06E727B1934900ECC7A9 /* TitleText.swift */; };
+		0FFB06EA27B193AA00ECC7A9 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB06E927B193AA00ECC7A9 /* Conversation.swift */; };
+		0FFB06EC27B1944600ECC7A9 /* ReturnButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB06EB27B1944600ECC7A9 /* ReturnButton.swift */; };
+		0FFB06EE27B1945300ECC7A9 /* MessageListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB06ED27B1945300ECC7A9 /* MessageListing.swift */; };
+		0FFB06F027B1946400ECC7A9 /* NewTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB06EF27B1946400ECC7A9 /* NewTextButton.swift */; };
+		0FFB06F227B199E800ECC7A9 /* MessageRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB06F127B199E800ECC7A9 /* MessageRepresentation.swift */; };
+		F9D5D0B8953FB83EA87FFEF3 /* AppInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5DD25CCC1324FC22C0A37 /* AppInstance.swift */; };
+		F9D5D224AEE8952C2806A7E5 /* ChatErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5DE7DD66890498405C28A /* ChatErrors.swift */; };
 		F9D5D370BB13C0C1853AE3B5 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5D4B02B51606F89A225C0 /* Chat.swift */; };
 		F9D5D42CECD60D475269D6AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9D5D2AC705F67BCEEEE9E71 /* Assets.xcassets */; };
 		F9D5D430CBEEACA48587BBD9 /* selfChat_569194UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D5D46B6EEE4607B927ED22 /* selfChat_569194UITests.swift */; };
@@ -41,6 +51,14 @@
 
 /* Begin PBXFileReference section */
 		0FAC2E0E27A9914700367AA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0FFB06E327B16FD100ECC7A9 /* Conversations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversations.swift; sourceTree = "<group>"; };
+		0FFB06E527B1749300ECC7A9 /* ChatIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatIcon.swift; sourceTree = "<group>"; };
+		0FFB06E727B1934900ECC7A9 /* TitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleText.swift; sourceTree = "<group>"; };
+		0FFB06E927B193AA00ECC7A9 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		0FFB06EB27B1944600ECC7A9 /* ReturnButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnButton.swift; sourceTree = "<group>"; };
+		0FFB06ED27B1945300ECC7A9 /* MessageListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListing.swift; sourceTree = "<group>"; };
+		0FFB06EF27B1946400ECC7A9 /* NewTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTextButton.swift; sourceTree = "<group>"; };
+		0FFB06F127B199E800ECC7A9 /* MessageRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRepresentation.swift; sourceTree = "<group>"; };
 		F9D5D1ABC5FBEDDF1EAC9085 /* selfChat_569194App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selfChat_569194App.swift; sourceTree = "<group>"; };
 		F9D5D2AC705F67BCEEEE9E71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9D5D2D113B63B7F97DE586F /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
@@ -53,8 +71,10 @@
 		F9D5D7067BB1F4754459A199 /* ColorErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorErrors.swift; sourceTree = "<group>"; };
 		F9D5D93D4EC6D10E751DB042 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F9D5DCF6D37C356D77A15C08 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F9D5DD25CCC1324FC22C0A37 /* AppInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInstance.swift; sourceTree = "<group>"; };
 		F9D5DD6674E829EAD98D87E4 /* selfChat_569194Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = selfChat_569194Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D5DD94616384A7A77D4C87 /* selfChat_569194.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = selfChat_569194.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9D5DE7DD66890498405C28A /* ChatErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatErrors.swift; sourceTree = "<group>"; };
 		F9D5DFA9614C0C1B22EE806B /* selfChat_569194UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selfChat_569194UITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +103,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FFB06DD27B16E4200ECC7A9 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				F9D5D608DB439A363189CFC1 /* StartView.swift */,
+				0FFB06E327B16FD100ECC7A9 /* Conversations.swift */,
+				0FFB06E527B1749300ECC7A9 /* ChatIcon.swift */,
+				0FFB06E727B1934900ECC7A9 /* TitleText.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		0FFB06DE27B16E5400ECC7A9 /* Konversation */ = {
+			isa = PBXGroup;
+			children = (
+				0FFB06E927B193AA00ECC7A9 /* Conversation.swift */,
+				0FFB06EB27B1944600ECC7A9 /* ReturnButton.swift */,
+				0FFB06ED27B1945300ECC7A9 /* MessageListing.swift */,
+				0FFB06EF27B1946400ECC7A9 /* NewTextButton.swift */,
+				0FFB06F127B199E800ECC7A9 /* MessageRepresentation.swift */,
+			);
+			path = Konversation;
+			sourceTree = "<group>";
+		};
+		0FFB06DF27B16E5F00ECC7A9 /* Texteingabe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Texteingabe;
+			sourceTree = "<group>";
+		};
+		0FFB06E027B16E7500ECC7A9 /* Generals */ = {
+			isa = PBXGroup;
+			children = (
+				F9D5DD25CCC1324FC22C0A37 /* AppInstance.swift */,
+				F9D5D2D113B63B7F97DE586F /* Functions.swift */,
+			);
+			path = Generals;
+			sourceTree = "<group>";
+		};
 		F9D5D29006521C780D4C15B8 /* ChatStructs */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				F9D5D7067BB1F4754459A199 /* ColorErrors.swift */,
+				F9D5DE7DD66890498405C28A /* ChatErrors.swift */,
 			);
 			path = Errors;
 			sourceTree = "<group>";
@@ -122,12 +182,14 @@
 		F9D5D955207DBBC96DCD6A82 /* selfChat_569194 */ = {
 			isa = PBXGroup;
 			children = (
+				0FFB06E027B16E7500ECC7A9 /* Generals */,
+				0FFB06DF27B16E5F00ECC7A9 /* Texteingabe */,
+				0FFB06DE27B16E5400ECC7A9 /* Konversation */,
+				0FFB06DD27B16E4200ECC7A9 /* Start */,
 				F9D5D2AC705F67BCEEEE9E71 /* Assets.xcassets */,
 				F9D5D29006521C780D4C15B8 /* ChatStructs */,
 				F9D5DABC83C0FB2481DDE864 /* Preview Content */,
 				F9D5D1ABC5FBEDDF1EAC9085 /* selfChat_569194App.swift */,
-				F9D5D2D113B63B7F97DE586F /* Functions.swift */,
-				F9D5D608DB439A363189CFC1 /* StartView.swift */,
 				0FAC2E0E27A9914700367AA0 /* ContentView.swift */,
 			);
 			path = selfChat_569194;
@@ -223,6 +285,7 @@
 		F9D5D484AA41D07CF6EF3E03 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 1320;
 			};
 			buildConfigurationList = F9D5D04D7507D8171E207DE9 /* Build configuration list for PBXProject "selfChat_569194" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -285,12 +348,22 @@
 			files = (
 				F9D5DAF6A9D4B29E83AE3F49 /* selfChat_569194App.swift in Sources */,
 				F9D5DEE867505EE3C0552FE7 /* User.swift in Sources */,
+				0FFB06F027B1946400ECC7A9 /* NewTextButton.swift in Sources */,
 				0FAC2E0F27A9914700367AA0 /* ContentView.swift in Sources */,
 				F9D5D370BB13C0C1853AE3B5 /* Chat.swift in Sources */,
 				F9D5DA4FCE72CB782C113D89 /* Functions.swift in Sources */,
 				F9D5D559DFFE305C36892EEF /* ColorErrors.swift in Sources */,
 				F9D5DC2439AA64E462D8E420 /* StartView.swift in Sources */,
 				F9D5DD1A170019268D44F51B /* Message.swift in Sources */,
+				0FFB06E427B16FD100ECC7A9 /* Conversations.swift in Sources */,
+				F9D5D0B8953FB83EA87FFEF3 /* AppInstance.swift in Sources */,
+				0FFB06E627B1749300ECC7A9 /* ChatIcon.swift in Sources */,
+				0FFB06EA27B193AA00ECC7A9 /* Conversation.swift in Sources */,
+				F9D5D224AEE8952C2806A7E5 /* ChatErrors.swift in Sources */,
+				0FFB06F227B199E800ECC7A9 /* MessageRepresentation.swift in Sources */,
+				0FFB06EC27B1944600ECC7A9 /* ReturnButton.swift in Sources */,
+				0FFB06EE27B1945300ECC7A9 /* MessageListing.swift in Sources */,
+				0FFB06E827B1934900ECC7A9 /* TitleText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +411,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -430,6 +504,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

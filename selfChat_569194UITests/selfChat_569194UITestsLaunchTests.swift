@@ -2,7 +2,7 @@
 //  selfChat_569194UITestsLaunchTests.swift
 //  selfChat_569194UITests
 //
-//  Created by Markus Zierhofer on 01.02.22.
+//  Created by Note on 01.02.22.
 //
 //
 

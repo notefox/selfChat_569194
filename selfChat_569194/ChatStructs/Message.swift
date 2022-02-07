@@ -4,9 +4,9 @@
 
 import Foundation
 
-struct Message: Codable, Hashable, Comparable {
+public struct Message: Codable, Hashable, Comparable, Identifiable {
 
-    let uuid: UUID
+    public var id: UUID
 
     let user: User?
 
@@ -14,15 +14,15 @@ struct Message: Codable, Hashable, Comparable {
 
     let timestamp: UInt64
 
-    public init(_ user: User, _ message: String) {
-        uuid = generateNewUUID()
+    public init(user: User, message: String) {
+        id = generateNewUUID()
         self.user = user
         self.message = message
         timestamp = currentTimeMillis()
     }
 
     public init(_ message: String) {
-        uuid = generateNewUUID()
+        id = generateNewUUID()
         user = nil;
         self.message = message
         timestamp = currentTimeMillis()
@@ -32,13 +32,13 @@ struct Message: Codable, Hashable, Comparable {
         self.message = message
     }
 
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(uuid)
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
         hasher.combine(message)
     }
 
-    static func ==(lhs: Message, rhs: Message) -> Bool {
-        if lhs.uuid != rhs.uuid {
+    public static func ==(lhs: Message, rhs: Message) -> Bool {
+        if lhs.id != rhs.id {
             return false
         }
         if lhs.message != rhs.message {
@@ -47,7 +47,7 @@ struct Message: Codable, Hashable, Comparable {
         return true
     }
 
-    static func <(lhs: Message, rhs: Message) -> Bool {
+    public static func <(lhs: Message, rhs: Message) -> Bool {
         lhs.timestamp < rhs.timestamp
     }
 }
