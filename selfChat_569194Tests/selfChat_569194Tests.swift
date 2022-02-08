@@ -38,7 +38,7 @@ class selfChat_569194Tests: XCTestCase {
 
         try instance.save()
         instance.fillWithTestValuesOnTestMode()
-        try print(instance.asJson().unsafelyUnwrapped)
+        try print(instance.asJsonString().unsafelyUnwrapped)
     }
     
     func testPerformanceExample() throws {

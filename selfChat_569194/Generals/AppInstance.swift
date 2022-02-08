@@ -5,21 +5,26 @@
 import Foundation
 import SwiftUI
 
-class AppInstance: ObservableObject {
+public class AppInstance: ObservableObject {
 
     public static var instance: AppInstance = AppInstance()
-    
-    @Published private var chats = Dictionary<User, Chat>()
 
+    var instanceSaver: InstanceSaver = InstanceSaver()
+
+    @Published private var chats = Dictionary<User, Chat>()
+    
     private var testMode = true
 
-    init() {
-        fillWithTestValuesOnTestMode()
+    public func initialize() {
+        do {
+            try instanceSaver.loadLastSaveToInstance(.instance)
+        } catch {
+            fillWithTestValuesOnTestMode()
+            try! instanceSaver.saveInstance(.instance)
+        }
     }
 
-    public func fillWithTestValuesOnTestMode() {
-        reset()
-        
+    public func fillWithTestValuesOnTestMode() {      
         if(testMode) {
             try? Chat.emptySamples.forEach { chat in
                 try addChat(chat)
@@ -42,6 +47,11 @@ class AppInstance: ObservableObject {
         chats[chat.withUser] = chat
     }
 
+    func importData(_ data: Data) throws {
+        chats = try decodeFromJsonData(jsonData: data)
+        try! InstanceSaver().saveInstance(.instance)
+    }
+
     public func getChatWithUser(_ user: User) throws -> Chat {
         guard userExistsAsKey(user) else {
             throw ChatErrors.UserDoesntExistError(user: user)
@@ -54,22 +64,23 @@ class AppInstance: ObservableObject {
             try addChat(chat)
             return
         }
-        chats[chat.withUser] = chat
-    }
 
-    public func save() throws {
-        let chatData: String = try asJson() ?? ""
-        try saveStringToFile(chatData: chatData, name: getTimestamp())
+        chats[chat.withUser] = chat
+        try! InstanceSaver().saveInstance(.instance)
     }
 
     private func userExistsAsKey(_ user: User) -> Bool {
         chats.keys.contains(user)
     }
 
-    public func asJson() throws -> String? {
+    public func asJsonString() throws -> String? {
         let data: Data? = encodeToJsonData(chats: chats)
         let jsonString: String? = try dataToString(data)
         return jsonString
+    }
+
+    public func asJson() throws -> Data {
+        encodeToJsonData(chats: chats) ?? Data()
     }
 
     private func dataToString(_ data: Data?) throws -> String? {
@@ -82,7 +93,14 @@ class AppInstance: ObservableObject {
         return data
     }
 
+    private func decodeFromJsonData(jsonData: Data) throws -> Dictionary<User, Chat> {
+        let decoder: JSONDecoder = JSONDecoder()
+        let recoveredChats = try decoder.decode(Dictionary<User, Chat>.self, from: jsonData)
+        return recoveredChats
+    }
+
     public func reset() {
         chats.removeAll()
+        try! InstanceSaver().saveInstance(.instance)
     }
 }

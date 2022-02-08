@@ -65,16 +65,24 @@ public func getTimestamp() -> String {
     String(NSDate().timeIntervalSince1970)
 }
 
-public func saveStringToFile(chatData: String, name: String) throws {
-    let pathWithFilename = documentUrl.appendingPathComponent(name+".json")
-    try chatData.write(to: pathWithFilename,
-            atomically: true,
-            encoding: .utf8)
+public func saveStringToFile(chatData: Data, name: String) throws {
+    let fileURL = URL(fileURLWithPath: name, relativeTo: documentUrl).appendingPathExtension("json")
+    
+    try chatData.write(to: fileURL)
     
 }
 
-public func showAllAvailableFiles(fileExtension: String) throws -> [URL] {
+public func getAllAvailableFiles(fileExtension: String) throws -> [URL] {
     let directoryContents = try FileManager.default.contentsOfDirectory(at: documentUrl, includingPropertiesForKeys: nil)
     return directoryContents.filter{ $0.pathExtension == fileExtension }
 }
 
+public func readFile(fileURL: URL) throws -> Data {
+    // Get the saved data
+    let savedData = try Data(contentsOf: fileURL)
+    return savedData
+}
+
+public func removeFile(fileURL: URL) {
+    try? FileManager.default.removeItem(at: fileURL)
+}

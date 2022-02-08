@@ -2,7 +2,7 @@
 //  NewMessageField.swift
 //  selfChat_569194
 //
-//  Created by Markus Zierhofer on 08.02.22.
+//  Created by Note on 08.02.22.
 //
 
 import SwiftUI

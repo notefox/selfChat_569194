@@ -10,7 +10,7 @@ import SwiftUI
 
 struct StartView: View {
 
-    var instance = AppInstance.instance
+    @State var chats = AppInstance.instance.allChats()
 
     private var twoColumnGrid: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
     
@@ -20,11 +20,20 @@ struct StartView: View {
         VStack {
             TitleText(title: navTitle)
             
-            Conversations(chats: instance.allChats())
+            Conversations(chats: chats)
                 .padding([.leading, .trailing])
                 .shadow(radius: 5)
         }.navigationBarTitle(navTitle)
             .navigationBarHidden(true)
+            .onAppear(perform: {
+                updateChatList()
+            })
+    }
+
+    private func updateChatList() {
+        AppInstance.instance.initialize()
+        chats = AppInstance.instance.allChats()
+        chats = Set(Array(chats).sorted(by: chatSortingAlgorithm))
     }
 }
 
