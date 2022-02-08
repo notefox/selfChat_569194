@@ -10,19 +10,21 @@ import SwiftUI
 
 struct StartView: View {
 
-    @StateObject fileprivate var instance = AppInstance()
+    var instance = AppInstance.instance
 
     private var twoColumnGrid: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
     
+    private let navTitle: String = "Conversation"
+    
     var body: some View {
         VStack {
-            TitleText(title: "Conversation")
-       
+            TitleText(title: navTitle)
+            
             Conversations(chats: instance.allChats())
                 .padding([.leading, .trailing])
                 .shadow(radius: 5)
-            
-        }
+        }.navigationBarTitle(navTitle)
+            .navigationBarHidden(true)
     }
 }
 

@@ -7,6 +7,8 @@ import SwiftUI
 
 class AppInstance: ObservableObject {
 
+    public static var instance: AppInstance = AppInstance()
+    
     @Published private var chats = Dictionary<User, Chat>()
 
     private var testMode = true
@@ -23,6 +25,10 @@ class AppInstance: ObservableObject {
                 try addChat(chat)
             }
         }
+    }
+    
+    public func allUsers() -> Set<User> {
+        Set(chats.keys)
     }
     
     public func allChats() -> Set<Chat> {

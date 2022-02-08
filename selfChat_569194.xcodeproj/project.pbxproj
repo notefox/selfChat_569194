@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F4E70C927B1EC8300AB0B2B /* TextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E70C827B1EC8300AB0B2B /* TextInputView.swift */; };
+		0F4E70CB27B1ED6400AB0B2B /* NewMessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E70CA27B1ED6400AB0B2B /* NewMessageField.swift */; };
+		0F4E70CD27B1EDD200AB0B2B /* SenderSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E70CC27B1EDD200AB0B2B /* SenderSettings.swift */; };
 		0FAC2E0F27A9914700367AA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAC2E0E27A9914700367AA0 /* ContentView.swift */; };
 		0FFB06E427B16FD100ECC7A9 /* Conversations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB06E327B16FD100ECC7A9 /* Conversations.swift */; };
 		0FFB06E627B1749300ECC7A9 /* ChatIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB06E527B1749300ECC7A9 /* ChatIcon.swift */; };
 		0FFB06E827B1934900ECC7A9 /* TitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB06E727B1934900ECC7A9 /* TitleText.swift */; };
 		0FFB06EA27B193AA00ECC7A9 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB06E927B193AA00ECC7A9 /* Conversation.swift */; };
-		0FFB06EC27B1944600ECC7A9 /* ReturnButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB06EB27B1944600ECC7A9 /* ReturnButton.swift */; };
 		0FFB06EE27B1945300ECC7A9 /* MessageListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB06ED27B1945300ECC7A9 /* MessageListing.swift */; };
 		0FFB06F027B1946400ECC7A9 /* NewTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB06EF27B1946400ECC7A9 /* NewTextButton.swift */; };
 		0FFB06F227B199E800ECC7A9 /* MessageRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB06F127B199E800ECC7A9 /* MessageRepresentation.swift */; };
@@ -50,12 +52,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F4E70C827B1EC8300AB0B2B /* TextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputView.swift; sourceTree = "<group>"; };
+		0F4E70CA27B1ED6400AB0B2B /* NewMessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageField.swift; sourceTree = "<group>"; };
+		0F4E70CC27B1EDD200AB0B2B /* SenderSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderSettings.swift; sourceTree = "<group>"; };
 		0FAC2E0E27A9914700367AA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0FFB06E327B16FD100ECC7A9 /* Conversations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversations.swift; sourceTree = "<group>"; };
 		0FFB06E527B1749300ECC7A9 /* ChatIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatIcon.swift; sourceTree = "<group>"; };
 		0FFB06E727B1934900ECC7A9 /* TitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleText.swift; sourceTree = "<group>"; };
 		0FFB06E927B193AA00ECC7A9 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
-		0FFB06EB27B1944600ECC7A9 /* ReturnButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnButton.swift; sourceTree = "<group>"; };
 		0FFB06ED27B1945300ECC7A9 /* MessageListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListing.swift; sourceTree = "<group>"; };
 		0FFB06EF27B1946400ECC7A9 /* NewTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTextButton.swift; sourceTree = "<group>"; };
 		0FFB06F127B199E800ECC7A9 /* MessageRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRepresentation.swift; sourceTree = "<group>"; };
@@ -118,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				0FFB06E927B193AA00ECC7A9 /* Conversation.swift */,
-				0FFB06EB27B1944600ECC7A9 /* ReturnButton.swift */,
 				0FFB06ED27B1945300ECC7A9 /* MessageListing.swift */,
 				0FFB06EF27B1946400ECC7A9 /* NewTextButton.swift */,
 				0FFB06F127B199E800ECC7A9 /* MessageRepresentation.swift */,
@@ -129,6 +132,9 @@
 		0FFB06DF27B16E5F00ECC7A9 /* Texteingabe */ = {
 			isa = PBXGroup;
 			children = (
+				0F4E70C827B1EC8300AB0B2B /* TextInputView.swift */,
+				0F4E70CA27B1ED6400AB0B2B /* NewMessageField.swift */,
+				0F4E70CC27B1EDD200AB0B2B /* SenderSettings.swift */,
 			);
 			path = Texteingabe;
 			sourceTree = "<group>";
@@ -347,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9D5DAF6A9D4B29E83AE3F49 /* selfChat_569194App.swift in Sources */,
+				0F4E70CD27B1EDD200AB0B2B /* SenderSettings.swift in Sources */,
 				F9D5DEE867505EE3C0552FE7 /* User.swift in Sources */,
 				0FFB06F027B1946400ECC7A9 /* NewTextButton.swift in Sources */,
 				0FAC2E0F27A9914700367AA0 /* ContentView.swift in Sources */,
@@ -354,14 +361,15 @@
 				F9D5DA4FCE72CB782C113D89 /* Functions.swift in Sources */,
 				F9D5D559DFFE305C36892EEF /* ColorErrors.swift in Sources */,
 				F9D5DC2439AA64E462D8E420 /* StartView.swift in Sources */,
+				0F4E70C927B1EC8300AB0B2B /* TextInputView.swift in Sources */,
 				F9D5DD1A170019268D44F51B /* Message.swift in Sources */,
+				0F4E70CB27B1ED6400AB0B2B /* NewMessageField.swift in Sources */,
 				0FFB06E427B16FD100ECC7A9 /* Conversations.swift in Sources */,
 				F9D5D0B8953FB83EA87FFEF3 /* AppInstance.swift in Sources */,
 				0FFB06E627B1749300ECC7A9 /* ChatIcon.swift in Sources */,
 				0FFB06EA27B193AA00ECC7A9 /* Conversation.swift in Sources */,
 				F9D5D224AEE8952C2806A7E5 /* ChatErrors.swift in Sources */,
 				0FFB06F227B199E800ECC7A9 /* MessageRepresentation.swift in Sources */,
-				0FFB06EC27B1944600ECC7A9 /* ReturnButton.swift in Sources */,
 				0FFB06EE27B1945300ECC7A9 /* MessageListing.swift in Sources */,
 				0FFB06E827B1934900ECC7A9 /* TitleText.swift in Sources */,
 			);

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ChatIcon: View {
     
+    var user: User
+    
     var representative_characters: String
     var color: Color
     
@@ -20,25 +22,27 @@ struct ChatIcon: View {
     var shadowRadius = 0.1
     
     var body: some View {
-        ZStack {
-            Circle()
-                .fill(outerCircleColor)
-                .frame(width: innerCircleSize + outerCircleSize, height: innerCircleSize + outerCircleSize)
-                .shadow(radius: shadowRadius)
-            
-            Circle()
-                .fill(color)
-                .frame(width: innerCircleSize, height: innerCircleSize)
-            
-            Text(representative_characters)
-                .foregroundColor(.white)
-            
+        NavigationLink(destination: Conversation(user: user)) {
+            ZStack {
+                Circle()
+                    .fill(outerCircleColor)
+                    .frame(width: innerCircleSize + outerCircleSize, height: innerCircleSize + outerCircleSize)
+                    .shadow(radius: shadowRadius)
+                
+                Circle()
+                    .fill(color)
+                    .frame(width: innerCircleSize, height: innerCircleSize)
+                
+                Text(representative_characters)
+                    .foregroundColor(.white)
+                
+            }
         }
     }
 }
 
 struct MyPreviewProvider_Previews: PreviewProvider {
     static var previews: some View {
-        ChatIcon(representative_characters: "SA", color: .red)
+        ChatIcon(user: Chat.fullSample().withUser, representative_characters: "SA", color: .red)
     }
 }

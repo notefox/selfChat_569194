@@ -9,19 +9,23 @@ import SwiftUI
 
 struct Conversation: View {
     
-    var chat: Chat
+    var user: User
+
+    @State var messages: Array<Message> = []
+    
+    @State var creatingNewMessage: Bool = false
     
     var body: some View {
-        VStack {
-            ReturnButton(title: "Text", viewToReturnTo: StartView())
-            MessageListing(messages: Array(chat.allMessages()))
-            NewTextButton(icon: Image(systemName: "pencil.circle"))
-        }
+        VStack() {
+            MessageListing(messages: messages).onAppear(perform: {
+                updateMessageList()
+            })
+            
+            NewTextButton(icon: Image("pencil.circle"), user: user, creatingNewMessage: $creatingNewMessage)
+        }.navigationBarTitleDisplayMode(.inline)
     }
-}
 
-struct Conversation_Previews: PreviewProvider {
-    static var previews: some View {
-        Conversation(chat: Chat.fullSample())
+    private func updateMessageList() {
+        messages = Array(try! AppInstance.instance.getChatWithUser(user).allMessages())
     }
 }

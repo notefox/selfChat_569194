@@ -22,6 +22,7 @@ struct Conversations: View {
             LazyVGrid(columns: twoColumnGrid) {
                 ForEach(chats) { chat in
                     ChatIcon(
+                        user: chat.withUser,
                         representative_characters: chat.withUser.initials,
                         color: getColorByHex(chat.withUser.rgbHexValue)
                     )

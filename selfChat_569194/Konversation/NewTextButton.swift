@@ -11,15 +11,21 @@ struct NewTextButton: View {
     
     var icon: Image
     
-    var body: some View {
-        HStack {
-            icon
-        }
-    }
-}
+    var user: User
 
-struct NewTextButton_Previews: PreviewProvider {
-    static var previews: some View {
-        NewTextButton(icon: Image(systemName: "pencil.circle"))
+    @Binding var creatingNewMessage: Bool
+
+    var body: some View {
+        NavigationLink(
+            destination: TextInputView(user: user, creatingNewMessage: self.$creatingNewMessage),
+            isActive: $creatingNewMessage) {
+            VStack {
+                icon
+                    .frame(width: 50, height: 50)
+                    .scaleEffect(2.0)
+            }.frame(maxWidth: .infinity, alignment: .trailing)
+                .border(Color.black, width: 2)
+                
+        }.isDetailLink(false)
     }
 }

@@ -78,4 +78,3 @@ public func showAllAvailableFiles(fileExtension: String) throws -> [URL] {
     return directoryContents.filter{ $0.pathExtension == fileExtension }
 }
 
-

@@ -26,7 +26,7 @@ public struct Chat: Codable, Hashable, Identifiable {
         withUser = newUser
     }
 
-    public mutating func addMessage(_ message: String, _ local: Bool) {
+    public mutating func addMessage(message: String, local: Bool) {
         let messageToSave: Message
         if local {
             messageToSave = Message(message)
@@ -63,16 +63,16 @@ extension Chat {
 
     static func fullSample() -> Chat{
         var chat: Chat = Chat(User(name: "test"))
-        chat.addMessage("test message 1", true)
-        chat.addMessage("test message 2", false)
-        chat.addMessage("test message 3", true)
-        chat.addMessage("test message 4", false)
-        chat.addMessage("test message 5", true)
-        chat.addMessage("test message 6", false)
-        chat.addMessage("test message 6", true)
-        chat.addMessage("test message 7", false)
-        chat.addMessage("test message 8", true)
-        chat.addMessage("test message 9", false)
+        chat.addMessage(message: "test message 1", local: true)
+        chat.addMessage(message: "test message 2", local: false)
+        chat.addMessage(message: "test message 3", local: true)
+        chat.addMessage(message: "test message 4", local: false)
+        chat.addMessage(message: "test message 5", local: true)
+        chat.addMessage(message: "test message 6", local: false)
+        chat.addMessage(message: "test message 6", local: true)
+        chat.addMessage(message: "test message 7", local: false)
+        chat.addMessage(message: "test message 8", local: true)
+        chat.addMessage(message: "test message 9", local: false)
         return chat
     }
 }
